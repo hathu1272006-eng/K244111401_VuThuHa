@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Trang Chủ Colorado</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden; /* Ngăn cuộn trang chính */
+            font-family: Arial, sans-serif;
+        }
+
+        /* Container chính */
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        /* Phần Logo (Header) - thay cho hàng 20% */
+        .header {
+            height: 20%;
+            border-bottom: 1px solid #ccc;
+        }
+
+        /* Phần thân chứa Menu và Nội dung */
+        .main-body {
+            display: flex;
+            flex: 1; /* Tự động lấp đầy phần còn lại */
+        }
+
+        /* Cột bên trái (Menu) - thay cho cột 30% */
+        .sidebar {
+            width: 30%;
+            border-right: 1px solid #ccc;
+        }
+
+        /* Cột bên phải (Nội dung) */
+        .content {
+            flex: 1;
+        }
+
+        /* Định dạng iframe để phủ kín div */
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <iframe src="logo.html"></iframe>
+        </div>
+
+        <div class="main-body">
+            <div class="sidebar">
+                <iframe src="Link.html"></iframe>
+            </div>
+
+            <div class="content">
+                <iframe src="About.html" name="main_content"></iframe>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
