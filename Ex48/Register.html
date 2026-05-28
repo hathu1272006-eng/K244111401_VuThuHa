@@ -1,0 +1,322 @@
+<html>
+<head>
+    <title>Jackson Electronics Registration</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: #5daed6;
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        .registration-box {
+            width: 650px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+        }
+
+        .header h2 {
+            margin: 5px 0;
+            font-size: 24px;
+        }
+
+        .header p {
+            margin: 0 0 15px;
+            font-size: 16px;
+        }
+
+        .separator {
+            margin: 15px 0;
+            border: 0;
+            border-top: 1px solid #787676;
+        }
+
+        .form-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .form-table td {
+            padding: 6px 4px;
+            font-size: 15px;
+            vertical-align: middle;
+        }
+
+        .label-column {
+            width: 20%;
+        }
+
+        .text-input,
+        .select-input,
+        .comment-box {
+            width: 100%;
+            padding: 4px;
+            border: 1px solid #c0b3b3;
+            font-family: "Times New Roman", Times, serif;
+            font-size: 14px;
+        }
+
+        .half-width {
+            width: 45%;
+        }
+
+        .comment-box {
+            height: 120px;
+            resize: none;
+        }
+
+        .name-layout {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .name-layout .field {
+            flex: 1;
+        }
+
+        .name-layout label {
+            white-space: nowrap;
+        }
+
+        .city-layout {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .city-field {
+            flex: 1;
+        }
+
+        .state-field {
+            width: 70px;
+        }
+
+        .zip-field {
+            width: 95px;
+        }
+
+        .choice-grid {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 35% 65%;
+            row-gap: 6px;
+        }
+
+        .choice-grid label {
+            margin-left: 3px;
+        }
+
+        .buttons {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .buttons input {
+            padding: 5px 20px;
+            margin: 0 8px;
+            background: #f0f0f0;
+            border: 1px solid #848383;
+            border-radius: 2px;
+            cursor: pointer;
+            font-family: "Times New Roman", Times, serif;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="registration-box">
+        <header class="header">
+            <img src="images/Jackson.gif" alt="Jackson Electronics Logo">
+
+            <h2>Registration Form</h2>
+            <p>Register your Jackson Electronics product here</p>
+        </header>
+
+        <form action="process_registration.html" method="get" name="registration_form">
+            <table class="form-table">
+                <tr>
+                    <td class="label-column">
+                        <label for="firstname">First Name:</label>
+                    </td>
+
+                    <td colspan="3">
+                        <div class="name-layout">
+                            <input class="text-input field" type="text" id="firstname" name="firstname">
+
+                            <label for="lastname">Last Name:</label>
+                            <input class="text-input field" type="text" id="lastname" name="lastname">
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="address1">Address #1:</label>
+                    </td>
+                    <td colspan="3">
+                        <input class="text-input" type="text" id="address1" name="address1">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="address2">Address #2:</label>
+                    </td>
+                    <td colspan="3">
+                        <input class="text-input" type="text" id="address2" name="address2">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="city">City:</label>
+                    </td>
+                    <td colspan="3">
+                        <div class="city-layout">
+                            <input class="text-input city-field" type="text" id="city" name="city">
+
+                            <label for="state">State:</label>
+                            <input class="text-input state-field" type="text" id="state" name="state">
+
+                            <label for="zip">Zip:</label>
+                            <input class="text-input zip-field" type="text" id="zip" name="zip">
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="country">Country:</label>
+                    </td>
+                    <td colspan="3">
+                        <input class="text-input half-width" type="text" id="country" name="country" value="United States">
+                    </td>
+                </tr>
+            </table>
+
+            <hr class="separator">
+
+            <table class="form-table">
+                <tr>
+                    <td class="label-column">
+                        <label for="product">Product:</label>
+                    </td>
+                    <td>
+                        <select class="select-input half-width" id="product" name="product">
+                            <option value="scanmaster">ScanMaster</option>
+                            <option value="laserprint">LaserPrint</option>
+                            <option value="digicam">DigiCam</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="date_purchased">Date Purchased:</label>
+                    </td>
+                    <td>
+                        <input class="text-input half-width" type="date" id="date_purchased" name="date_purchased">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="serial_num">Serial #:</label>
+                    </td>
+                    <td>
+                        <input class="text-input half-width" type="text" id="serial_num" name="serial_num">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="vertical-align: top;">Used for:</td>
+                    <td>
+                        <div class="choice-grid">
+                            <div>
+                                <input type="radio" id="home" name="used_for" value="home">
+                                <label for="home">Home</label>
+                            </div>
+
+                            <div>
+                                <input type="radio" id="edu" name="used_for" value="education">
+                                <label for="edu">Educational Institution</label>
+                            </div>
+
+                            <div>
+                                <input type="radio" id="business" name="used_for" value="business" checked>
+                                <label for="business">Business</label>
+                            </div>
+
+                            <div>
+                                <input type="radio" id="other_use" name="used_for" value="other">
+                                <label for="other_use">Other</label>
+                            </div>
+
+                            <div>
+                                <input type="radio" id="gov" name="used_for" value="government">
+                                <label for="gov">Government</label>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="vertical-align: top;">System (check all that apply):</td>
+                    <td>
+                        <div class="choice-grid">
+                            <div>
+                                <input type="checkbox" id="win" name="system" value="windows">
+                                <label for="win">Windows</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" id="unix" name="system" value="unix">
+                                <label for="unix">UNIX</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" id="mac" name="system" value="macintosh">
+                                <label for="mac">Macintosh</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" id="other_sys" name="system" value="other">
+                                <label for="other_sys">Other</label>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
+            <hr class="separator">
+
+            <table class="form-table">
+                <tr>
+                    <td class="label-column" style="vertical-align: top;">
+                        <label for="comments">Comments?:</label>
+                    </td>
+                    <td>
+                        <textarea class="comment-box" id="comments" name="comments"></textarea>
+                    </td>
+                </tr>
+            </table>
+
+            <div class="buttons">
+                <input type="submit" value="Click to register">
+                <input type="reset" value="Click to cancel">
+            </div>
+        </form>
+    </main>
+</body>
+</html>

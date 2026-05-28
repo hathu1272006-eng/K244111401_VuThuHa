@@ -1,0 +1,74 @@
+<html>
+<head>
+    <title>Registration Process Simulation</title>
+</head>
+<body>
+
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        div {
+            width: 600px;
+            margin: 30px auto;
+            padding: 25px;
+            background-color: #ccffff;
+            border: 2px solid #0000ff;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            color: #008000;
+            font-size: 24px;
+            margin: 0 0 10px 0;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #008080;
+            margin: 0 0 20px 0;
+        }
+
+        p {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            font-size: 15px;
+            margin: 5px 0;
+        }
+    </style>
+
+    <div>
+        <h1>Registration Successful!</h1>
+        <hr>
+        <p>The following data has been received and processed:</p>
+        
+        <ul id="ketqua"></ul>
+    </div>
+
+    <script>
+        var thamso = new URLSearchParams(window.location.search);
+        var danhsach = document.getElementById("ketqua");
+
+        thamso.forEach(function(giatri, ten) {
+            var dong = document.createElement("li");
+            dong.innerHTML = "<strong>" + ten + ":</strong> " + giatri;
+            danhsach.appendChild(dong);
+        });
+    </script>
+
+</body>
+</html>
