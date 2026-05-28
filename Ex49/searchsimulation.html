@@ -1,0 +1,76 @@
+<html>
+<head>
+    <title>Search Simulation Result</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        form {
+            width: 600px;
+            margin: 30px auto;
+            padding: 25px;
+            background-color: #ccffff;
+            border: 2px solid #0000ff;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            color: #008000;
+            font-size: 24px;
+            margin: 0 0 10px 0;
+            font-weight: bold;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #008080;
+            margin: 0 0 20px 0;
+        }
+
+        p {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            font-size: 15px;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <form name="result_form">
+        <h1>Search Simulation Result</h1>
+        <hr>
+        <p>The system has successfully received your search parameters:</p>
+        
+        <ul id="ketquatimkiem"></ul>
+    </form>
+
+    <script>
+        var thamso = new URLSearchParams(window.location.search);
+        var danhsach = document.getElementById("ketquatimkiem");
+
+        thamso.forEach(function(giatri, ten) {
+            if (giatri.trim() !== "") {
+                var dong = document.createElement("li");
+                dong.innerHTML = "<strong>" + ten + ":</strong> " + giatri;
+                danhsach.appendChild(dong);
+            }
+        });
+    </script>
+
+</body>
+</html>

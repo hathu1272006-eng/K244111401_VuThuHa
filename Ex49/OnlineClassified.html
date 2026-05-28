@@ -1,0 +1,227 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Online Classifieds Search Form</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background-color: #ffffff;
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        .search-container {
+            width: 600px;
+            margin: 30px auto;
+            padding: 25px;
+            background-color: #d0fefe;
+            border: 2px solid #1212fa;
+        }
+
+        .search-container h1 {
+            margin: 0 0 8px;
+            color: #ff3300;
+            font-size: 26px;
+        }
+
+        .line {
+            border: 0;
+            border-top: 1px solid #5fa718;
+            margin: 0 0 20px;
+        }
+
+        .question {
+            margin: 15px 0 10px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .section-grid {
+            display: grid;
+            gap: 8px 20px;
+            margin-bottom: 12px;
+            font-size: 15px;
+        }
+
+        .classified-grid {
+            grid-template-columns: 35% 65%;
+        }
+
+        .publication-grid {
+            grid-template-columns: 38% 28% 34%;
+        }
+
+        .option {
+            display: flex;
+            align-items: center;
+        }
+
+        .option input {
+            margin-right: 5px;
+        }
+
+        .date-row {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin: 15px 0;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        input[type="date"],
+        input[type="text"] {
+            padding: 3px;
+            border: 1px solid #787676;
+            background-color: #fcf9f9;
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        .date-row input {
+            width: 150px;
+        }
+
+        .keyword-box {
+            width: 100%;
+            margin-bottom: 12px;
+        }
+
+        .keyword-box input {
+            width: 100%;
+        }
+
+        .action-buttons {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin-top: 25px;
+            padding-left: 20px;
+        }
+
+        .action-buttons button {
+            padding: 0;
+            border: none;
+            background: transparent;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <form class="search-container" name="search_form" action="search_simulation.html" method="get">
+        <h1>Online Classifieds Search Form</h1>
+        <hr class="line">
+
+        <section>
+            <div class="question">1) Search for a classified in the following sections:</div>
+
+            <div class="section-grid classified-grid">
+                <label class="option">
+                    <input type="radio" name="section" value="employment">
+                    Employment
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="section" value="personal">
+                    Personal
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="section" value="forsale">
+                    For Sale
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="section" value="miscellaneous">
+                    Miscellaneous
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="section" value="housing">
+                    Housing
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="section" value="all">
+                    All of the above
+                </label>
+            </div>
+        </section>
+
+        <section>
+            <div class="question">2) Search the following publications:</div>
+
+            <div class="section-grid publication-grid">
+                <label class="option">
+                    <input type="checkbox" name="publication" value="midwest">
+                    Midwest times
+                </label>
+
+                <label class="option">
+                    <input type="checkbox" name="publication" value="modern">
+                    Modern News
+                </label>
+
+                <label class="option">
+                    <input type="checkbox" name="publication" value="employtoday">
+                    Employment Today
+                </label>
+
+                <label class="option">
+                    <input type="checkbox" name="publication" value="greatlakes">
+                    Great Lakes Classifieds
+                </label>
+
+                <label class="option">
+                    <input type="checkbox" name="publication" value="middleton">
+                    Middleton Daily
+                </label>
+
+                <label class="option">
+                    <input type="checkbox" name="publication" value="cashtown">
+                    Cashtown Daily News
+                </label>
+            </div>
+        </section>
+
+        <section class="date-row">
+            <span>3) From</span>
+            <input type="date" name="from_date">
+            <span>to</span>
+            <input type="date" name="to_date">
+            <span>.</span>
+        </section>
+
+        <section>
+            <div class="question">4) Enter a few keywords to describe the classified.</div>
+
+            <div class="keyword-box">
+                <input type="text" name="keywords">
+            </div>
+        </section>
+
+        <section>
+            <div class="question">5) Click one of the options below:</div>
+
+            <div class="action-buttons">
+                <button type="submit">
+                    <img src="images/Search.gif" alt="Search">
+                </button>
+
+                <button type="button" onclick="window.open('help.html')">
+                    <img src="images/Help.gif" alt="Help">
+                </button>
+
+                <button type="reset">
+                    <img src="images/Cancel.gif" alt="Cancel">
+                </button>
+            </div>
+        </section>
+    </form>
+</body>
+</html>
