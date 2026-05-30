@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <title>Tiêu đề trang</title>
+  </head>
+  <body>
+    <p>Contact the editorial office</p>
+    <form action="contact_page.html" method="get">
+      <table>
+        <tr>
+          <td>Full name</td>
+        </tr>
+        <tr>
+          <td><input type="text" name="fullName"/></td>
+        </tr>
+        <tr>
+          <td>Email</td>
+           <td><label for="sendto">Send to:</label></td>
+        </tr>
+        <tr>
+          <td><input type="text" name="email"/></td> 
+          <td>
+            <select id="sendto" name="sendTo" size="1">
+              <option value="EditorialBoard">Editorial Board</option>
+              <option value="NewDepartment">News Department</option>
+              <option value="BoardofPerspectives">Board of Perspectives</option>
+              <option value="BusinessDepartment">Business Department</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Title</td>
+        </tr>
+        <tr>
+          <td><input type="text" name="title"/></td>
+        </tr>
+        <tr>
+          <td>Content</td>
+        </tr>
+        <tr>
+          <td colspan="2"><textarea name="content" rows="5" cols="55"></textarea></td>
+        </tr>
+        <tr>
+          <td>
+            <input type="submit" value="Send"
+              style="background-color:#b01855; color:white; width:80px; height:30px;">
+          </td>
+      </tr>
+      </table>
+    </form>
+  </body>
+</html>
