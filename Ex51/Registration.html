@@ -1,0 +1,72 @@
+<html>
+  <head>
+    <title>Tiêu đề trang</title>
+  </head>
+  <body style="background-color: rgb(8, 110, 110);">
+    <div align="center">
+      <img src="images/Logo.gif">
+    </div>
+    <h1 style="text-align:center; color: white;">Newborn Registration</h1>
+    <form action="dangky.html" method="post">
+      <table>
+        <tr>
+          <td style="color:white;">Date</td>
+          <td colspan="3"><input type="date" name="date"/></td>
+        </tr>
+        <tr>
+          <td style="color:white;">1) Infant's first name</td>
+          <td><input type="text" name="infantFirstName"/></td>
+          <td style="color:white;">Last</td>
+          <td><input type="text" name="infantLastName"/></td>
+        </tr>
+        <tr>
+          <td style="color:white;">2) Medical Record#:</td>
+          <td colspan="3"><input type="text" name="medicalRecordNumber"/></td>
+        </tr>
+        <tr>
+          <td style="color:white;">3) Date of birth</td>
+          <td colspan="3"><input type="date" name="dateOfBirth"/></td>
+        </tr>
+        <tr>
+          <td style="color:white;">4) Birth weight</td>
+          <td colspan="3"><input type="text" name="birthWeight"/></td>
+        </tr>
+        <tr>
+          <td style="color:white;">5) APGAR score:</td>
+          <td colspan="3"><input type="text" name="apgarScore"/></td>
+        </tr>
+        <tr>
+          <td style="color:white;">6) Mother's first name:</td>
+          <td><input type="text" name="motherFirstName"/></td>
+          <td style="color:white;">Last</td>
+          <td><input type="text" name="motherLastName"/></td>
+        </tr>
+        <tr>
+          <td style="color:white;">7) Father's first name:</td>
+          <td><input type="text" name="fatherFirstName"/></td>
+          <td style="color:white;">Last</td>
+          <td><input type="text" name="fatherLastName"/></td>
+        </tr>
+        <tr>
+          <td style="color:white;">
+            <label for="physician">8) Physician (check<br>all that apply):</label>
+          </td>
+          <td colspan="3">
+            <select id="physician" name="physician" multiple size="4">
+              <option value="warren-albert">Dr. Warren Albert</option>
+              <option value="maria-alvarez">Dr. Maria Alvarez</option>
+              <option value="karen-brinkman">Dr. Karen Brinkman</option>
+              <option value="michael-kerry">Dr. Micheal Kerry</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="4" style="text-align:center; padding-top:15px;">
+            <input type="submit" value="Register">
+            <input type="reset" value="Cancel">
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
