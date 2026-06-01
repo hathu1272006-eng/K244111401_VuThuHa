@@ -1,0 +1,21 @@
+<html>
+<head>
+  <script type="text/javascript">
+    function cong(a, b)
+    {
+      document.getElementById("idkq").innerHTML=(eval(a)+eval(b))
+    }
+  </script>
+</head>
+<body>
+    Nhập a:
+    <input type="number" id="ida"/>
+    <br/>
+    Nhập b:
+    <input type="number" id="idb"/>
+    <br />
+    <input type="button" value="Tính +" 
+    onclick="cong(ida.value, idb.value)"/>
+    <br/>
+    Kết quả:
+    <label id="idkq"></label>
