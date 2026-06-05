@@ -1,0 +1,106 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Exercise 57: Handle the text change event</title>
+        <script>
+            function calcLine1() {
+                var priceText = document.getElementById('price1').innerText;
+                var price = parseFloat(priceText); 
+                var qty = parseFloat(myform.qty1.value);
+                if (isNaN(qty) || qty < 0) {
+                    qty = 0;
+                }
+                var itemTotal = price * qty;
+                myform.item1.value = itemTotal.toFixed(2);
+            }
+            function calcLine2() {
+                var priceText = document.getElementById('price2').innerText;
+                var price = parseFloat(priceText); 
+                var qty = parseFloat(myform.qty2.value);
+                if (isNaN(qty) || qty < 0) {
+                    qty = 0;
+                }
+                var itemTotal = price * qty;
+                myform.item2.value = itemTotal.toFixed(2);
+            }
+            function calcLine3() {
+                var priceText = document.getElementById('price3').innerText;
+                var price = parseFloat(priceText); 
+                var qty = parseFloat(myform.qty3.value);
+                if (isNaN(qty) || qty < 0) {
+                    qty = 0;
+                }
+                var itemTotal = price * qty;
+                myform.item3.value = itemTotal.toFixed(2);
+            }
+            function calcTotal() {
+                var item1 = parseFloat(myform.item1.value) || 0;
+                var item2 = parseFloat(myform.item2.value) || 0;
+                var item3 = parseFloat(myform.item3.value) || 0;
+                var total = item1 + item2 + item3;
+                myform.total.value = total.toFixed(2);
+            }
+        </script>
+        <style>
+            button {
+                background-color: #ffc000; 
+                color: white;
+                border: 1px solid #9e760a;
+                padding: 6px 20px;
+                font-weight: bold;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+
+        <form name="myform">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Part Number</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                        <th>Qty</th>
+                        <th>Item table</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>C112</td>
+                        <td>Mouse</td>
+                        <td id="price1">19.95$</td>
+                        <td><input type="text" name="qty1" oninput="calcLine1()"></td>
+                        <td><input type="text" name="item1" readonly></td>
+                    </tr>
+                    <tr>
+                        <td>B124</td>
+                        <td>Keyboard US</td>
+                        <td id="price2">29.95$</td>
+<td><input type="text" name="qty2" oninput="calcLine2()"></td>
+                        <td><input type="text" name="item2" readonly></td>
+                    </tr>
+                    <tr>
+                        <td>U125</td>
+                        <td>USB KingMax</td>
+                        <td id="price3">39.95$</td>
+                        <td><input type="text" name="qty3" oninput="calcLine3()"></td>
+                        <td><input type="text" name="item3" readonly></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"></td>
+                        <td align="right">Total:</td>
+                        <td><input type="text" name="total" readonly></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4"></td>
+                        <td>
+                            <button type="button" onclick="calcTotal()">Sum</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+
+    </body>
+</html>
