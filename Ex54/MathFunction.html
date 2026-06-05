@@ -1,0 +1,72 @@
+<html>
+  <head>
+    <title>Tiêu đề trang</title>
+    <script>
+      function calculateMax() {
+      var a = Number(myform.a.value);
+      var b = Number(myform.b.value);
+      var c = Number(myform.c.value);
+
+      myform.result.value = Math.max(a, b, c);
+    }
+
+    function calculateMin() {
+      var a = Number(myform.a.value);
+      var b = Number(myform.b.value);
+      var c = Number(myform.c.value);
+
+      myform.result.value = Math.min(a, b, c);
+    }
+
+    function calculateSin() {
+      var a = Number(myform.a.value);
+
+      myform.result.value = Math.sin(a);
+    }
+
+    function calculateCos() {
+      var a = Number(myform.a.value);
+
+      myform.result.value = Math.cos(a);
+    }
+
+    function calculatePower() {
+      var a = Number(myform.a.value);
+      var b = Number(myform.b.value);
+
+      myform.result.value = Math.pow(a, b);
+    }
+  </script>
+  </head>
+  <body>
+    <form name="myform">
+    <table border="1">
+      <tr>
+        <td>a:</td>
+        <td><input type="number" name="a"></td>
+      </tr>
+      <tr>
+        <td>b:</td>
+        <td><input type="number" name="b"></td>
+      </tr>
+      <tr>
+        <td>c:</td>
+        <td><input type="number" name="c"></td>
+      </tr>
+      <tr>
+        <td>Result:</td>
+        <td><input type="text" name="result" readonly></td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <button type="button" onclick="calculateMax()">MAX</button>
+          <button type="button" onclick="calculateMin()">MIN</button>
+          <button type="button" onclick="calculateSin()">sin(a)</button>
+          <button type="button" onclick="calculateCos()">cos(a)</button>
+          <button type="button" onclick="calculatePower()">a^b</button>
+        </td>
+      </tr>
+    </table>
+  </form>
+  </body>
+</html>
