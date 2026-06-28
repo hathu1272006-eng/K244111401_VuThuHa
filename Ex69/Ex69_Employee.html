@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Exercise 69 - XML AJAX (*)</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+
+  <table id="filterTable">
+    <tr>
+      <td class="label-col">Title:</td>
+      <td>
+        <select id="titleSelect" onchange="displayByTitle(this.value)">
+        </select>
+      </td>
+    </tr>
+  </table>
+
+  <table id="empTable">
+    <thead>
+      <tr>
+        <th>Employee ID</th>
+        <th>Employee Name</th>
+        <th>Phone</th>
+      </tr>
+    </thead>
+    <tbody id="empBody">
+    </tbody>
+  </table>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 0;
+}
+
+#filterTable {
+  border-collapse: collapse;
+  margin-bottom: 12px;
+}
+
+#filterTable td {
+  padding: 4px 8px;
+  border: none;
+  vertical-align: middle;
+}
+
+#filterTable td.label-col {
+  font-weight: bold;
+}
+
+select {
+  border: 1px solid #999999;
+  padding: 3px 6px;
+  font-size: 13px;
+  background-color: #ffffff;
+}
+
+#empTable {
+  border-collapse: collapse;
+  width: 460px;
+}
+
+#empTable thead th {
+  background-color: #003366;
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid #002244;
+  font-weight: bold;
+  text-align: left;
+}
+
+#empTable tbody td {
+  padding: 7px 16px;
+  border: 1px solid #cccccc;
+  background-color: #ffffff;
+  color: #000000;
+}
