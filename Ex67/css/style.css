@@ -1,0 +1,90 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 0;
+}
+
+h2 {
+  color: #003366;
+  font-size: 18px;
+  margin-bottom: 14px;
+}
+
+#studentTable {
+  border-collapse: collapse;
+  width: 580px;
+}
+
+#studentTable thead th {
+  background-color: #003366;
+  color: #ffffff;
+  padding: 8px 14px;
+  border: 1px solid #002244;
+  text-align: left;
+}
+
+#studentTable thead tr:first-child th {
+  text-align: center;
+  font-size: 14px;
+}
+
+#studentTable thead tr.col-headers th {
+  cursor: pointer;
+  user-select: none;
+  font-weight: bold;
+}
+
+#studentTable thead tr.col-headers th:hover {
+  background-color: #004488;
+}
+
+#studentTable tbody td {
+  padding: 7px 14px;
+  border: 1px solid #cccccc;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+#studentTable tbody tr {
+  cursor: pointer;
+}
+
+#detailTable {
+  border-collapse: collapse;
+  width: 400px;
+}
+
+#detailTable thead th {
+  background-color: #003366;
+  color: #ffffff;
+  text-align: center;
+  padding: 8px 14px;
+  border: 1px solid #002244;
+  font-size: 14px;
+}
+
+#detailTable tbody td {
+  padding: 8px 14px;
+  border: 1px solid #cccccc;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.btn-back {
+  display: inline-block;
+  margin-top: 14px;
+  padding: 5px 16px;
+  background-color: #003366;
+  color: #ffffff;
+  border: none;
+  border-radius: 3px;
+  font-size: 13px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-back:hover {
+  background-color: #002244;
+}
