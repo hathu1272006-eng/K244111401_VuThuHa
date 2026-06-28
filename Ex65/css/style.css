@@ -1,0 +1,77 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  padding: 24px;
+  background-color: #f5f5f5;
+}
+
+h2 {
+  color: #003366;
+  font-size: 18px;
+  margin: 20px 0 8px 0;
+}
+
+.control-table {
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  padding: 10px;
+}
+
+.control-table td {
+  padding: 6px 10px;
+  vertical-align: middle;
+  border: none;
+}
+
+input[type="text"] {
+  border: 1px solid #999999;
+  padding: 4px 6px;
+  font-size: 13px;
+}
+
+input.input-content {
+  width: 180px;
+}
+
+input.input-pos {
+  width: 50px;
+  text-align: center;
+}
+
+button {
+  padding: 5px 14px;
+  font-size: 12px;
+  cursor: pointer;
+  border: 1px solid #888888;
+  border-radius: 3px;
+  background-color: #e0e0e0;
+  min-width: 100px;
+}
+
+button:hover {
+  background-color: #cccccc;
+}
+
+.list-wrapper {
+  margin-top: 16px;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  padding: 12px 20px;
+  width: 300px;
+}
+
+#webList {
+  margin: 6px 0 0 0;
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+#webList li {
+  padding: 3px 0;
+  color: #222222;
+}
+
+span.field-label {
+  color: #333333;
+}

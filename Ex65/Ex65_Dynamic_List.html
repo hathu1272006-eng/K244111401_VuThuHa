@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Exercise 65 - Dynamic List</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+
+  <table class="control-table">
+    <tr>
+      <td><button onclick="addNode()">Add Node</button></td>
+      <td>
+        <span class="field-label">Content</span>
+        <input type="text" id="addContent" class="input-content" />
+      </td>
+      <td>
+        <span class="field-label">Position</span>
+        <input type="text" id="addPos" class="input-pos" />
+      </td>
+    </tr>
+    <tr>
+      <td><button onclick="removeNode()">Remove Node</button></td>
+      <td></td>
+      <td>
+        <span class="field-label">Position</span>
+        <input type="text" id="removePos" class="input-pos" />
+      </td>
+    </tr>
+    <tr>
+      <td><button onclick="modifyNode()">Modify Node</button></td>
+      <td>
+        <span class="field-label">New Content</span>
+        <input type="text" id="modContent" class="input-content" />
+      </td>
+      <td>
+        <span class="field-label">Position</span>
+        <input type="text" id="modPos" class="input-pos" />
+      </td>
+    </tr>
+  </table>
+
+  <div class="list-wrapper">
+    <h2>Web Node</h2>
+    <ul id="webList">
+      <li>Data base</li>
+      <li>Web1</li>
+      <li>Web2</li>
+    </ul>
+  </div>
+
+</body>
+</html>
