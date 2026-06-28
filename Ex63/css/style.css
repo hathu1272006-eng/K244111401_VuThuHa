@@ -1,0 +1,173 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  background-color: #f0f0f0;
+  padding: 24px;
+  margin: 0;
+}
+
+h2 {
+  color: #003366;
+  font-size: 22px;
+  margin-bottom: 16px;
+}
+
+h3 {
+  color: #003366;
+  font-size: 15px;
+  margin: 24px 0 10px 0;
+  border-left: 4px solid #003366;
+  padding-left: 8px;
+}
+
+.form-wrapper {
+  background-color: #ffffff;
+  border: 2px solid #003366;
+  border-radius: 4px;
+  padding: 20px 24px;
+  width: 560px;
+}
+
+
+.form-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.form-table td {
+  padding: 6px 8px;
+  vertical-align: middle;
+  border: none;
+}
+
+.form-table td.label-col {
+  width: 140px;
+  font-weight: bold;
+  color: #333333;
+}
+
+
+.req {
+  color: red;
+}
+
+
+input[type="text"] {
+  border: 1px solid #999999;
+  padding: 4px 6px;
+  font-size: 13px;
+  width: 200px;
+}
+
+input[type="text"]:focus {
+  border-color: #003366;
+  outline: none;
+  box-shadow: 0 0 3px rgba(0,51,102,0.3);
+}
+
+select {
+  border: 1px solid #999999;
+  padding: 3px 4px;
+  font-size: 13px;
+  background-color: #ffffff;
+}
+
+/* ===== CHECKBOXES & RADIOS ===== */
+.checkbox-group label,
+.radio-group label {
+  display: block;
+  margin: 3px 0;
+  cursor: pointer;
+}
+
+.checkbox-group input[type="checkbox"],
+.radio-group input[type="radio"] {
+  margin-right: 6px;
+}
+
+
+.color-blue   { color: blue;   font-weight: bold; }
+.color-red    { color: red;    font-weight: bold; }
+.color-yellow { color: #aaaa00; font-weight: bold; }
+.color-green  { color: green;  font-weight: bold; }
+.color-violet { color: violet; font-weight: bold; }
+
+
+.btn-signup {
+  background-color: #003366;
+  color: #ffffff;
+  border: none;
+  padding: 6px 18px;
+  font-size: 13px;
+  cursor: pointer;
+  border-radius: 3px;
+  margin-right: 6px;
+}
+
+.btn-signup:hover {
+  background-color: #001f44;
+}
+
+.btn-reset {
+  background-color: #888888;
+  color: #ffffff;
+  border: none;
+  padding: 6px 18px;
+  font-size: 13px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.btn-reset:hover {
+  background-color: #666666;
+}
+
+
+.table-wrapper {
+  margin-top: 24px;
+  width: 760px;
+}
+
+#memberTable {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 1px 1px 4px rgba(0,0,0,0.12);
+}
+
+#memberTable thead th {
+  background-color: #003366;
+  color: #ffffff;
+  padding: 9px 12px;
+  text-align: left;
+  border: 1px solid #002244;
+  font-size: 13px;
+}
+
+#memberTable tbody td {
+  padding: 7px 12px;
+  border: 1px solid #cccccc;
+  color: #222222;
+  background-color: #ffffff;
+  transition: background-color 0.1s;
+}
+
+#memberTable tbody tr:hover td {
+  background-color: yellow;
+  cursor: pointer;
+}
+
+
+.error-msg {
+  color: red;
+  font-size: 11px;
+  margin-left: 4px;
+  display: none;
+}
+
+
+hr.section-divider {
+  border: none;
+  border-top: 1px solid #cccccc;
+  margin: 10px 0;
+}

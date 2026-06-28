@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Exercise 63 - Member Registration</title>
+
+  
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+  
+  <script type="text/javascript" src="js/script.js"></script>
+</head>
+
+<body>
+
+  <h2>Member Registration</h2>
+
+
+  <div class="form-wrapper">
+    <form id="regForm">
+      <table class="form-table">
+
+      
+        <tr>
+          <td class="label-col">Name<span class="req">(*)</span></td>
+          <td>
+            <input type="text" id="name" name="name" placeholder="Enter your name" />
+          </td>
+        </tr>
+
+       
+        <tr>
+          <td class="label-col">Birthday<span class="req">(*)</span></td>
+          <td>
+            Day: <select id="day" name="day"></select>
+            &nbsp; Month: <select id="month" name="month"></select>
+            &nbsp; Year: <select id="year" name="year"></select>
+            <!-- Các option được nạp tự động bằng JavaScript (vòng lặp) -->
+          </td>
+        </tr>
+
+        
+        <tr>
+          <td class="label-col">Gender<span class="req">(*)</span></td>
+          <td>
+            <input type="radio" name="gender" value="Man" id="gMan" checked />
+            <label for="gMan">Man</label>
+            &nbsp;&nbsp;
+            <input type="radio" name="gender" value="Woman" id="gWoman" />
+            <label for="gWoman">Woman</label>
+          </td>
+        </tr>
+
+        
+        <tr>
+          <td class="label-col">Email<span class="req">(*)</span></td>
+          <td>
+            <input type="text" id="email" name="email" placeholder="user@domain.com" />
+          </td>
+        </tr>
+
+       
+        <tr><td colspan="2"><hr class="section-divider" /></td></tr>
+
+        
+        <tr>
+          <td class="label-col" style="vertical-align:top; padding-top:8px;">Your favorite:</td>
+          <td>
+            <div class="checkbox-group">
+              <label><input type="checkbox" name="hobby" value="Shopping" /> Shopping</label>
+              <label><input type="checkbox" name="hobby" value="Tourism"  /> Tourism</label>
+              <label><input type="checkbox" name="hobby" value="Chat"     /> Chat</label>
+              <label><input type="checkbox" name="hobby" value="Read a book" /> Read a book</label>
+              <label><input type="checkbox" name="hobby" value="Listening to music" /> Listening to music</label>
+            </div>
+          </td>
+        </tr>
+
+        
+        <tr>
+          <td class="label-col" style="vertical-align:top; padding-top:8px;">Your favorite color:</td>
+          <td>
+            <div class="radio-group">
+              <label>
+                <input type="radio" name="color" value="Blue" id="cBlue" checked />
+                <span class="color-blue">Blue</span>
+              </label>
+              <label>
+                <input type="radio" name="color" value="Red" id="cRed" />
+                <span class="color-red">Red</span>
+              </label>
+              <label>
+                <input type="radio" name="color" value="Yellow" id="cYellow" />
+                <span class="color-yellow">Yellow</span>
+              </label>
+              <label>
+                <input type="radio" name="color" value="Green" id="cGreen" />
+                <span class="color-green">Green</span>
+              </label>
+              <label>
+                <input type="radio" name="color" value="Violet" id="cViolet" />
+                <span class="color-violet">Violet</span>
+              </label>
+            </div>
+          </td>
+        </tr>
+
+       
+        <tr><td colspan="2"><hr class="section-divider" /></td></tr>
+
+        
+        <tr>
+          <td colspan="2" align="center">
+            <button type="button" class="btn-signup" onclick="signUp()">Sign up</button>
+            <button type="button" class="btn-reset"  onclick="clearForm()">Reset</button>
+          </td>
+        </tr>
+
+      </table>
+    </form>
+  </div>
+
+
+
+  <div class="table-wrapper">
+    <h3>Registered Members</h3>
+
+    <table id="memberTable">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Gender</th>
+          <th>Birthday</th>
+          <th>Hobbies</th>
+          <th>Colors</th>
+        </tr>
+      </thead>
+      <tbody id="memberBody">
+
+      </tbody>
+    </table>
+  </div>
+
+</body>
+</html>
