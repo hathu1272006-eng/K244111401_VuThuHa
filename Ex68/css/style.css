@@ -1,0 +1,42 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 0;
+}
+
+input[type="button"] {
+  padding: 6px 16px;
+  font-size: 13px;
+  background-color: #e0e0e0;
+  border: 1px solid #999999;
+  cursor: pointer;
+  border-radius: 3px;
+  margin-bottom: 14px;
+}
+
+input[type="button"]:hover {
+  background-color: #cccccc;
+}
+
+#cdTable {
+  border-collapse: collapse;
+  width: 460px;
+}
+
+#cdTable thead th {
+  background-color: #003366;
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid #002244;
+  font-weight: bold;
+  text-align: left;
+}
+
+#cdTable tbody td {
+  padding: 7px 16px;
+  border: 1px solid #cccccc;
+  background-color: #ffffff;
+  color: #000000;
+}
